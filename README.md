@@ -38,11 +38,11 @@ class AwsConfig(Settings, sources=("env",)):
         ini_file = os.getenv("AWS_SHARED_CREDENTIALS_FILE", "~/.aws/credentials")
 ```
 
-It's really easy to set up job or service configs using the `cbiconsul` package.
+It's really easy to set up job or service configs using the `cbconsul` package.
 ```python
 from cbconf import Settings, Field
 from cbconf import registry as reg
-from cbiconsul import ConsulSource
+from cbconsul import ConsulSource
 
 
 # this is handled automatically in service bootstrap, just here for illustration
